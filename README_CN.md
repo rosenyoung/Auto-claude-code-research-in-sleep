@@ -298,7 +298,7 @@ NARRATIVE_REPORT.md ──► /paper-plan ──► /paper-figure ──► /pap
 | 📱 [`feishu-notify`](skills/feishu-notify/SKILL.md) | [飞书](#-飞书lark-集成可选)通知——推送（webhook）或双向交互。默认关闭 | 否 |
 | | | |
 | **社区 Skills** | *社区贡献的领域专用 skills* | |
-| 🏗️ [`dse-loop`](skills/dse-loop/SKILL.md) | 计算机体系结构 & EDA 自动设计空间探索（gem5、Yosys、Verilator 等） | 否 |
+| 🏗️ [`dse-loop`](skills/dse-loop/SKILL.md) | 自动设计空间探索——迭代运行、分析、调参。原为体系结构/EDA 设计（gem5、Yosys），但适用于任何有可调参数的领域（计算化学、CFD、生信等） | 否 |
 
 ---
 

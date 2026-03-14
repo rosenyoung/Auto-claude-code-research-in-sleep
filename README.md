@@ -355,7 +355,7 @@ After Workflow 3 generates the paper, `/auto-paper-improvement-loop` runs 2 roun
 | 📱 [`feishu-notify`](skills/feishu-notify/SKILL.md) | [Feishu/Lark](#-feishulark-integration-optional) notifications — push (webhook) or interactive (bidirectional). Off by default | No |
 | | | |
 | **Community Skills** | *Domain-specific skills contributed by the community* | |
-| 🏗️ [`dse-loop`](skills/dse-loop/SKILL.md) | Autonomous design space exploration for computer architecture & EDA (gem5, Yosys, Verilator, etc.) | No |
+| 🏗️ [`dse-loop`](skills/dse-loop/SKILL.md) | Autonomous design space exploration — iteratively run, analyze, and tune parameters. Built for architecture/EDA (gem5, Yosys), but works for any domain with tunable parameters (comp chem, CFD, bioinformatics, etc.) | No |
 
 ---
 
