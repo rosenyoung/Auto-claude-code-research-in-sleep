@@ -481,7 +481,8 @@ Claude Code reads this and knows how to SSH in, activate the environment, and la
 
 </details>
 
-### 📚 Zotero Integration (Optional)
+<details>
+<summary><b>📚 Zotero Integration (Optional)</b></summary>
 
 If you use [Zotero](https://www.zotero.org/) to manage your paper library, `/research-lit` can search your collections, read your annotations/highlights, and export BibTeX — all before searching the web.
 
@@ -509,7 +510,10 @@ claude mcp add zotero -s user -- zotero-mcp \
 
 **Not using Zotero?** No problem — `/research-lit` automatically skips Zotero and uses local PDFs + web search instead.
 
-### 📓 Obsidian Integration (Optional)
+</details>
+
+<details>
+<summary><b>📓 Obsidian Integration (Optional)</b></summary>
 
 If you use [Obsidian](https://obsidian.md/) for research notes, `/research-lit` can search your vault for paper summaries, tagged references, and your own insights.
 
@@ -536,6 +540,8 @@ cp -r obsidian-skills/.claude /path/to/your/vault/
 **Not using Obsidian?** No problem — `/research-lit` automatically skips Obsidian and works as before.
 
 > 💡 **Zotero + Obsidian together**: Many researchers use Zotero for paper storage and Obsidian for notes. Both integrations work simultaneously — `/research-lit` checks Zotero first (raw papers + annotations), then Obsidian (your processed notes), then local PDFs, then web search.
+
+</details>
 
 ### 📱 Feishu/Lark Integration (Optional)
 

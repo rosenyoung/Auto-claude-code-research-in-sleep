@@ -397,7 +397,8 @@ Claude Code 读到这些就知道怎么 SSH、激活环境、启动实验。GPT-
 
 </details>
 
-### 📚 Zotero 集成（可选）
+<details>
+<summary><b>📚 Zotero 集成（可选）</b></summary>
 
 如果你用 [Zotero](https://www.zotero.org/) 管理论文，`/research-lit` 可以搜索你的文献库、读取标注/高亮、导出 BibTeX——全在联网搜索之前完成。
 
@@ -425,7 +426,10 @@ claude mcp add zotero -s user -- zotero-mcp \
 
 **不用 Zotero？** 没关系——`/research-lit` 自动跳过，用本地 PDF + 网络搜索。
 
-### 📓 Obsidian 集成（可选）
+</details>
+
+<details>
+<summary><b>📓 Obsidian 集成（可选）</b></summary>
 
 如果你用 [Obsidian](https://obsidian.md/) 做研究笔记，`/research-lit` 可以搜索你的 vault 中的论文总结、带标签的引用和你自己的洞察。
 
@@ -452,6 +456,8 @@ cp -r obsidian-skills/.claude /path/to/your/vault/
 **不用 Obsidian？** 没关系——`/research-lit` 自动跳过，照常工作。
 
 > 💡 **Zotero + Obsidian 同时使用**：很多研究者用 Zotero 存论文、Obsidian 记笔记。两个集成可以同时工作——`/research-lit` 先查 Zotero（原始论文 + 标注），再查 Obsidian（加工后笔记），再查本地 PDF，最后搜网络。
+
+</details>
 
 ### 📱 飞书/Lark 集成（可选）
 
