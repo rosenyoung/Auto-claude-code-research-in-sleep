@@ -732,7 +732,7 @@
     <text x="595" y="135" font-size="7px" fill="#999">→ PASTE_READY.txt (4832/5000)</text>
 
     <!-- CC pixel character (left-bottom) -->
-    <g transform="translate(30,155) scale(0.5)">
+    <g transform="translate(20,145) scale(0.7)">
       <rect x="20" y="42" width="7" height="7" fill="#8B5E3C"/>
       <rect x="27" y="42" width="7" height="7" fill="#8B5E3C"/>
       <rect x="34" y="42" width="7" height="7" fill="#8B5E3C"/>
@@ -768,7 +768,7 @@
     <text x="55" y="213" text-anchor="middle" font-size="6px" fill="#4A9EDA">(Drafter)</text>
 
     <!-- GPT pixel character (right-bottom) -->
-    <g transform="translate(770,155) scale(0.5)">
+    <g transform="translate(770,145) scale(0.7)">
       <rect x="20" y="42" width="7" height="7" fill="#2C2C2C"/>
       <rect x="27" y="42" width="7" height="7" fill="#2C2C2C"/>
       <rect x="34" y="42" width="7" height="7" fill="#2C2C2C"/>
