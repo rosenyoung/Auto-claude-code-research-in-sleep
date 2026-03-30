@@ -88,6 +88,7 @@ Two outputs: `PASTE_READY.txt` (exact char count, paste to venue) + `REBUTTAL_DR
 
 ## 📢 What's New
 
+- **2026-03-30** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) ☁️ **[Vast.ai GPU rental](skills/vast-gpu/SKILL.md)** — no GPU? `gpu: vast` in CLAUDE.md, ARIS auto-rents cheapest GPU, runs experiment, destroys when done. Community contribution by [@YIHONG-JIN](https://github.com/YIHONG-JIN). 🔧 **MiniMax M2.7 upgrade** — API URL fix + model upgrade + tests. By [@octo-patch](https://github.com/octo-patch)
 - **2026-03-27** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 📄 **IEEE venue support** — `IEEE_JOURNAL` (TPAMI/TIP/TNNLS) + `IEEE_CONF` (ICC/GLOBECOM/INFOCOM/ICASSP). Official IEEEtran templates. **9 venue families now.** 🔎 **[Semantic Scholar](skills/semantic-scholar/SKILL.md)** — search published venue papers beyond arXiv (`— sources: semantic-scholar`). Community contributions by [@ypd666](https://github.com/ypd666)
 - **2026-03-26** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 📄 **Document-based input** — drop a `RESEARCH_BRIEF.md` in your project, `/idea-discovery` and `/research-pipeline` auto-detect it. No more squeezing complex research directions into one line. [Template](templates/RESEARCH_BRIEF_TEMPLATE.md)
 - **2026-03-24** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 📝 **[Workflow 4: `/rebuttal`](skills/rebuttal/SKILL.md)** — post-submission rebuttal pipeline. Parse reviews → atomize → strategy → draft → safety check → GPT-5.4 stress test → finalize (strict + rich versions) → follow-up rounds. 3 safety gates (no fabrication, no overpromise, full coverage). `quick mode` for analysis only. `auto experiment` for supplementary experiments. Designed from 5 successful rebuttal case studies + 3 rounds GPT-5.4 xhigh design review
@@ -155,6 +156,7 @@ claude
 > | `illustration` | `gemini` | AI illustration in Workflow 3: `gemini` (default, needs `GEMINI_API_KEY`), `mermaid` (free), or `false` (skip) |
 > | `venue` | `ICLR` | Target venue: `ICLR`, `NeurIPS`, `ICML`, `CVPR`, `ACL`, `AAAI`, `ACM`. Determines LaTeX style file and page limit |
 > | `base repo` | `false` | GitHub repo URL to clone as base codebase (e.g., `— base repo: https://github.com/org/project`). No code? Build on top of an open-source project |
+> | `gpu` | `local` | GPU target: `local` (default), `remote` (SSH server), or `vast` (rent on-demand from [Vast.ai](https://vast.ai) — auto-provision, auto-destroy) |
 > | `compact` | `false` | Generate compact summary files (`IDEA_CANDIDATES.md`, `findings.md`, `EXPERIMENT_LOG.md`) for short-context models and session recovery |
 > | `ref paper` | `false` | Reference paper to build on (PDF path or arXiv URL). Summarized first, then ideas extend/improve it. Combine with `base repo` for paper+code workflows |
 >
