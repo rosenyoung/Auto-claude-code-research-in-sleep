@@ -756,9 +756,14 @@ Got reviews back? `/rebuttal` parses them, builds a strategy, and drafts a venue
 
 ### Install Skills
 
+> 💡 **New Claude Code versions** may not auto-create `~/.claude/skills/`. If the directory doesn't exist, create it first: `mkdir -p ~/.claude/skills/`. This works alongside the new plugins system — both `skills/` and `plugins/` are loaded by Claude Code.
+
 ```bash
 git clone https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep.git
 cd Auto-claude-code-research-in-sleep
+
+# Create skills directory if it doesn't exist
+mkdir -p ~/.claude/skills/
 
 # Install all skills globally
 cp -r skills/* ~/.claude/skills/
