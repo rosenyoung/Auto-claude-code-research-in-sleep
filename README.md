@@ -104,6 +104,7 @@ Two outputs: `PASTE_READY.txt` (exact char count, paste to venue) + `REBUTTAL_DR
 
 ## 📢 What's New
 
+- **2026-04-03** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🎮 **Reviewer Difficulty Levels** — `medium` (default, unchanged), `hard` (reviewer memory + debate protocol), `nightmare` (GPT reads repo directly via `codex exec` — Claude can't hide anything). `— difficulty: nightmare` for maximum stress test before submission
 - **2026-03-30** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 🔥 **Auto-debug & exhaust-before-surrender** — experiment-bridge now auto-diagnoses failures (OOM, import, path, CUDA, NaN) and retries up to 3× before giving up. auto-review-loop must try 2+ solution paths before conceding any reviewer concern. Inspired by [PUA](https://github.com/tanweai/pua)
 - **2026-03-30** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) ☁️ **[Vast.ai GPU rental](skills/vast-gpu/SKILL.md)** — no GPU? `gpu: vast` in CLAUDE.md, ARIS auto-rents cheapest GPU, runs experiment, destroys when done. Community contribution by [@YIHONG-JIN](https://github.com/YIHONG-JIN). 🔧 **MiniMax M2.7 upgrade** — API URL fix + model upgrade + tests. By [@octo-patch](https://github.com/octo-patch)
 - **2026-03-27** — ![NEW](https://img.shields.io/badge/NEW-red?style=flat-square) 📄 **IEEE venue support** — `IEEE_JOURNAL` (TPAMI/TIP/TNNLS) + `IEEE_CONF` (ICC/GLOBECOM/INFOCOM/ICASSP). Official IEEEtran templates. **9 venue families now.** 🔎 **[Semantic Scholar](skills/semantic-scholar/SKILL.md)** — search published venue papers beyond arXiv (`— sources: semantic-scholar`). Community contributions by [@ypd666](https://github.com/ypd666)
@@ -492,6 +493,18 @@ Already have an experiment plan (from Workflow 1 or your own)? `/experiment-brid
 > - `/auto-review-loop "factorized gap in discrete diffusion LMs"` — broad topic, skill finds everything
 > - `/auto-review-loop "focus on Section 3-5, our CRF results are weak"` — targeted scope with hints
 > - `/auto-review-loop` — also works: skill reads project files and infers the topic
+
+**🎮 Reviewer Difficulty** — control how adversarial the reviewer is:
+
+| Level | What changes | Use when |
+|-------|-------------|----------|
+| `medium` (default) | Standard MCP review — same as before | Normal workflow |
+| `hard` | + Reviewer Memory (GPT tracks suspicions across rounds) + Debate Protocol (Claude rebuts, GPT rules) | Want tougher feedback |
+| `nightmare` | + GPT reads repo directly via `codex exec` (Claude can't filter what it sees) + adversarial verification | Preparing for top venue, want maximum stress test |
+
+```bash
+/auto-review-loop "topic" — difficulty: nightmare    # GPT reads your code and verifies claims itself
+```
 
 **🛡️ Key safety features:**
 
